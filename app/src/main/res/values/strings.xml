@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">AndroidPlayground</string>
+    <string name="txt_mosque">Mosque</string>
+    <string name="txt_church">Church</string>
+    <string name="txt_temple">Temple</string>
+    <string name="title_activity_compose_main">ComposeMainActivity</string>
+
+</resources>

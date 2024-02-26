@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".viewpagerrecycler.ViewPagerWithRecyclerViewActivity">
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/testPager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/dotsIndicator" />
+
+    <com.tbuonomo.viewpagerdotsindicator.DotsIndicator
+        android:id="@+id/dotsIndicator"
+        android:layout_width="wrap_content"
+        android:layout_height="16dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp"
+        android:layout_marginBottom="36dp"
+        app:dotsColor="#E3E3E3"
+        app:dotsSize="10dp"
+        app:dotsSpacing="6dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center_horizontal"
+        app:dotsStrokeWidth="4dp"
+        app:dotsWidthFactor="1"
+        app:progressMode="false"
+        app:selectedDotColor="#5F5F5F" />
+
+</RelativeLayout>
