@@ -42,7 +42,7 @@ android {
         compose = true
     }
     composeOptions {
-        kotlinCompilerExtensionVersion = "1.5.3" // Update if needed
+        kotlinCompilerExtensionVersion = "1.5.7"
     }
     packaging {
         resources {
@@ -80,6 +80,9 @@ dependencies {
     kapt("com.google.dagger:hilt-android-compiler:2.50")
     implementation("androidx.hilt:hilt-navigation-compose:1.1.0")
     implementation("se.warting.signature:signature-view:0.1.2")
+
+    //compose-maps
+    implementation("com.google.maps.android:maps-compose:4.3.3")
 }
 
 kapt {

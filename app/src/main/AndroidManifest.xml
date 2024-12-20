@@ -12,8 +12,17 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidPlayground"
         tools:targetApi="31">
+
+        <meta-data android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBPH1Nq-R_UBd9oGNAEAPM5YaQISUAqIdU"/>
+
         <activity
             android:name=".webviewjsbridge.WebJsActivity"
+            android:exported="false" >
+        </activity>
+
+        <activity
+            android:name=".composemap.ComposeMapActivity"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -21,6 +30,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity
             android:name=".signature.SignatureActivity"
             android:exported="true"></activity>
