@@ -42,12 +42,16 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.hilt.navigation.compose.hiltViewModel
+import com.learn.androidplayground.compose.breathexercise.MainScreen
 import com.learn.androidplayground.compose.ui.theme.AndroidPlaygroundTheme
 import com.learn.androidplayground.compose.ui.theme.BlackText
 import com.learn.androidplayground.compose.ui.theme.BorderColor
 import com.learn.androidplayground.compose.ui.theme.InterFontFamily
 import com.learn.androidplayground.compose.ui.theme.MerchantAppThemeColor
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class ComposeMainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -58,7 +62,7 @@ class ComposeMainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    Greeting("Android")
+                    MainScreen(viewModel = hiltViewModel())
                 }
             }
         }

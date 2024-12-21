@@ -5,4 +5,6 @@
     <color name="color_sky_blue">#0FFFF0</color>
     <color name="color_yellow">#FFF000</color>
     <color name="color_light_violet">#CFAACF</color>
+    <color name="dark_orange">#E67300</color>
+    <color name="light_orange">#FFDBBB</color>
 </resources>
