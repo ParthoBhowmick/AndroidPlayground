@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WebView Loading Example</title>
+    <script>
+        function showLoader() {
+            AndroidBridge.showLoading();
+        }
+
+        function hideLoader() {
+            AndroidBridge.hideLoading();
+        }
+
+        // Simulate a process that shows and hides the loader
+        function simulateProcess() {
+            showLoader();
+            setTimeout(() => {
+                hideLoader();
+                alert("Process complete!");
+            }, 5000); // Simulates a 3-second process
+        }
+    </script>
+</head>
+<body>
+    <h1>WebView Loading Example</h1>
+    <button onclick="simulateProcess()">Start Process</button>
+</body>
+</html>

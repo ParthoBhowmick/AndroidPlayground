@@ -28,6 +28,8 @@ class ViewPagerWithRecyclerViewActivity : AppCompatActivity() {
                 viewPagerAdapter.notifyItemRemoved(position)
             }
         })
+        testPager.setOffscreenPageLimit(3)
+        testPager.addItemDecoration(MarginItemDecoration(20))
         testPager.adapter = viewPagerAdapter
         dotIndicator.attachTo(testPager)
     }

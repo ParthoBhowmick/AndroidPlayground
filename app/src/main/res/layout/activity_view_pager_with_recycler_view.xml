@@ -10,6 +10,10 @@
         android:id="@+id/testPager"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:clipChildren="false"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
         android:layout_above="@id/dotsIndicator" />
 
     <com.tbuonomo.viewpagerdotsindicator.DotsIndicator
