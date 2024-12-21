@@ -12,6 +12,31 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidPlayground"
         tools:targetApi="31">
+
+        <meta-data android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBPH1Nq-R_UBd9oGNAEAPM5YaQISUAqIdU"/>
+
+        <activity
+            android:name=".webviewjsbridge.WebJsActivity"
+            android:exported="false" >
+        </activity>
+
+        <activity
+            android:name=".composemap.ComposeMapActivity"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".signature.SignatureActivity"
+            android:exported="true"></activity>
+        <activity
+            android:name=".coroutine.TestCoroutineActivity"
+            android:exported="true"></activity>
         <activity
             android:name=".compose.ComposeMainActivity"
             android:exported="false"
@@ -19,16 +44,12 @@
             android:theme="@style/Theme.AndroidPlayground" />
         <activity
             android:name=".viewpagerrecycler.ViewPagerWithRecyclerViewActivity"
-            android:exported="false" />
+            android:exported="true">
+
+        </activity>
         <activity
             android:name=".MainActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:exported="true" />
     </application>
 
 </manifest>
